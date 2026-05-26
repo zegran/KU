@@ -13,12 +13,13 @@ This file is auto-loaded by Claude Code when working in this repository. It over
 
 ## Authoritative References (read before acting)
 
-1. `Docs/refs/IJPVP_official_sources.md` — 🔒 **FROZEN single source of truth** for IJPVP. Every IJPVP-related decision starts here. **No new web searches for IJPVP** — view this file instead. Missing items marked ⚠ are author-doğrulanacak.
+1. `Docs/refs/IJPVP_official_sources.md` — 🔒 **FROZEN v2** single source of truth for IJPVP. Every IJPVP-related decision starts here. **No new web searches for IJPVP** — view this file instead. Missing items marked ⚠ are author-doğrulanacak.
 2. `Docs/plan/2026-05-26-paper-plan-IJPVP-v1.md` — strategic plan, K1–K4 closed
-3. `Docs/plan/2026-05-26-execution-plan-IJPVP-v1.md` — execution plan, WP1–WP7
-4. `Docs/plan/2026-05-26-readiness-assessment-TR.md` — current readiness 65.5/100 (v1.1)
-5. `Docs/plan/2026-05-26-responsibility-matrix.md` — file ownership + change rules
-6. `README.md` — repo overview
+3. `Docs/plan/2026-05-26-execution-plan-IJPVP-v2.md` — **v2** execution plan (Methods-first writing order, WP1–WP8). v1 archived.
+4. `Docs/plan/WP_skill_mapping.md` — per-WP skill activation rules (Skill() trigger + log format)
+5. `Docs/plan/2026-05-26-readiness-assessment-TR.md` — current readiness 66.5/100 (v1.2)
+6. `Docs/plan/2026-05-26-responsibility-matrix.md` — file ownership + change rules
+7. `README.md` — repo overview
 
 When the user issues a `WP<N> başlat` command, follow the execution plan exactly. Do not improvise WP scope.
 

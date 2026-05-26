@@ -1,5 +1,14 @@
 # Tez → IJPVP Makale Üretim Planı (v1)
 
+> **2026-05-26 not:** Bu stratejik plan (K1–K4 sabit kararları) hâlâ geçerli. Ancak WP numerasyonu artık `Docs/plan/2026-05-26-execution-plan-IJPVP-v2.md`'ye göre okunmalıdır (Methods-first writing order). Bu dosyadaki WP1–WP7 referansları execution plan v2 ile aşağıdaki şekilde eşleşir:
+> - WP1 (mapping) = WP1 ✓ aynı
+> - WP2 (citations) = WP2 ✓ aynı
+> - WP3 (figures/tables) → **WP3a + WP3b (figures) + WP4 (tables/equations)**
+> - WP4 (section drafting plan) → WP1 içinde IMRaD spine olarak entegre edildi
+> - WP5 (drafting) → **WP5a–WP5g** (Methods → Results → Discussion → Conclusion → Introduction → Abstract+Title → Highlights)
+> - WP6 (citation verify) → **WP6a (coherence) + WP6b (citation) + WP6c (anti-AI) + WP6d (iThenticate)**
+> - WP7 (self-review + LaTeX + submission) → **WP7a–WP7e + WP8 (submission)**
+
 **Tarih:** 2026-05-26
 **Hedef dergi:** International Journal of Pressure Vessels and Piping (Elsevier, Q1) — **SABİT**
 **Kaynak:** `Docs/KUnal_tez_org_tr.md` (TR yüksek lisans tezi, 1960 satır) + `Docs/media/media/` (18 şekil)

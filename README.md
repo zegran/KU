@@ -48,27 +48,44 @@ Korc/
 
 ---
 
-## Workflow (Work Packages)
+## Workflow (Work Packages v2)
 
-| WP | Purpose | Status |
-|----|---------|--------|
-| **WP0a** | Validation Audit (K2 gate) | ✅ Passed |
-| **WP0b** | Anchor Claim Feasibility (K3) | 🟡 TOC-level positive; full check in WP1 |
-| **WP0c** | Journal Targeting (K1) | ✅ IJPVP locked |
-| **WP0d** | Anti-Plagiarism Rewrite SOP (K4) | ⏸ Triggered at WP5 start |
-| **WP1** | Thesis-to-paper section mapping | ⏳ Awaiting `WP1 başlat` |
-| **WP2** | Citation strategy & reference pool | ⏳ |
-| **WP3** | Figures & tables strategy | ⏳ |
-| **WP4** | Section-by-section drafting plan | ⏳ |
-| **WP5** | Drafting (8 sections, one per session) | ⏳ |
-| **WP6** | Citation verification + BibTeX | ⏳ |
-| **WP7** | Self-review + LaTeX + submission package | ⏳ |
+> v2 reorders WPs in professional writing sequence: Methods first, Introduction second-to-last, Abstract last. Figures locked before text. See `Docs/plan/2026-05-26-execution-plan-IJPVP-v2.md`. v1 archived.
 
-Each WP is gate-locked: no WP starts without author authorization; no WP is skipped.
+| WP | Purpose | Skill (primary) | Status |
+|----|---------|-----------------|--------|
+| **WP0a** | Validation Audit (K2 gate) | — | ✅ Passed |
+| **WP0b** | Anchor Claim Feasibility (K3) | — | 🟡 Full check in WP1 |
+| **WP0c** | Journal Targeting (K1) | — | ✅ IJPVP locked |
+| **WP0d** | Anti-Plagiarism Rewrite SOP (K4) | — | ⏸ Triggered at WP5a |
+| **WP1** | Thesis-to-paper map + IMRaD spine | `superpowers:writing-plans` | ⏳ Awaiting `WP1 başlat` |
+| **WP2** | Citation pool (40–60 EN refs) | `citation-verification` | ⏳ |
+| **WP3a** | Figure strategy (lock before text) | `publication-chart-skill` | ⏳ |
+| **WP3b** | Figure production | `publication-chart-skill` | ⏳ |
+| **WP4** | Tables + equation derivations | `publication-chart-skill` | ⏳ |
+| **WP5a** | **Methods** (first — most factual) | `ml-paper-writing` | ⏳ |
+| **WP5b** | **Results** | `ml-paper-writing` | ⏳ |
+| **WP5c** | **Discussion** | `ml-paper-writing` | ⏳ |
+| **WP5d** | **Conclusion** | `ml-paper-writing` | ⏳ |
+| **WP5e** | **Introduction** (second-to-last) | `ml-paper-writing` | ⏳ |
+| **WP5f** | **Abstract + Title** (last) | `ml-paper-writing` | ⏳ |
+| **WP5g** | **Highlights** | `ml-paper-writing` | ⏳ |
+| **WP6a** | Coherence pass | `paper-self-review` | ⏳ |
+| **WP6b** | Citation verification | `citation-verification` | ⏳ |
+| **WP6c** | Anti-AI / language polish | `writing-anti-ai` | ⏳ |
+| **WP6d** | iThenticate check (🔴 author) | — | ⏳ |
+| **WP7a** | Cover letter + novelty | `doc-coauthoring` | ⏳ |
+| **WP7b** | Graphical abstract | `publication-chart-skill` | ⏳ |
+| **WP7c** | CRediT + declarations + data avail. | `doc-coauthoring` | ⏳ |
+| **WP7d** | LaTeX migration (elsarticle) | `latex-conference-template-organizer` | ⏳ |
+| **WP7e** | Final self-review | `paper-self-review` | ⏳ |
+| **WP8** | Submission (🔴 author) | — | ⏳ |
 
-**Realistic timeline:** 21–33 CLI sessions · 6–10 calendar weeks (incl. author review turns, optional FEA runs, iThenticate, advisor review).
+Each WP is gate-locked: no WP starts without author authorization; no WP is skipped. See `Docs/plan/WP_skill_mapping.md` for skill activation rules.
 
-See `Docs/plan/2026-05-26-execution-plan-IJPVP-v1.md` for the full execution plan.
+**Realistic timeline:** 27–43 CLI sessions · 6–10 calendar weeks.
+
+See `Docs/plan/2026-05-26-execution-plan-IJPVP-v2.md` for the full execution plan.
 
 ---
 
