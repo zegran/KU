@@ -291,3 +291,9 @@ Komut verildiğinde CLI:
 
 ## Sürüm
 - **v1 — 2026-05-26** — İlk execution planı; v1 stratejik plan üzerine kurulu
+- **v1 patch — 2026-05-26** — IJPVP_official_sources v2 entegrasyonu:
+  - §1A kelime tahsisi ~7.300 → **6.000 kelime** hedefi (Original article limit, [14]). WP1'de yeniden dağıtılacak.
+  - WP4 frontmatter planında **keywords 1–7** (and/of bağlaçsız); önceki "5–7" düzeltildi
+  - WP5 highlights üretimi: IJPVP-spesifik 3–5 bullet, ≤85 char, ayrı editable dosya
+  - WP7 submission portalı: **Editorial Manager** `https://www.editorialmanager.com/IPVP`
+  - Hedef article type: **Original article** (alternatif yok)

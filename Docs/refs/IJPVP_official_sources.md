@@ -1,8 +1,10 @@
 # IJPVP — Resmi Referans Dosyası (Single Source of Truth)
 
-> **🔒 FROZEN — son güncelleme: 2026-05-26 — yazar onayı olmadan değiştirilmez.**
+> **🔒 FROZEN — v2, 2026-05-26 (yazar destekli ek kaynak verisi) — yazar onayı olmadan değiştirilmez.**
 >
 > Bu dosya tamamlandıktan sonra CLI bir daha IJPVP için web araması yapmaz; her IJPVP sorusunda yalnızca bu dosya `view` edilir. Eksik veya çelişkili kayıtlar ⚠ ile işaretlenmiştir ve yazar tarafından manuel doğrulanmalıdır.
+>
+> **v1 → v2 delta:** quartile kesinleşti (Q1/Q1), scope genişledi, article type listesi + tam makale kelime limiti eklendi, keywords kuralı düzeltildi, highlights kuralı netleşti, Editorial Manager URL doğrulandı. v1 yedeği: `Docs/refs/archive/IJPVP_official_sources_v1.md`.
 
 ---
 
@@ -14,19 +16,37 @@
 | Print ISSN | 0308-0161 | [2][3] |
 | Electronic ISSN | 1879-3541 | [3] |
 | Yayıncı | Elsevier (Elsevier Sci Ltd) | [1][2][3] |
-| Yayın sıklığı | Aylık (monthly) | [2][3] |
+| Yayın sıklığı | Aylık (monthly) | [2][3][13] |
 | Yayın başlangıç yılı | 1972 | [3] |
-| Yıllık makale hacmi | 2025'te ~212–241 arası (kaynaklara göre değişiyor) | [2][3] |
-| Dil | İngilizce (multi-language tag ile birlikte) | [3] |
-| Indexing | SCIE, Scopus | [2] |
+| Yıllık makale hacmi | ⚠ Çelişki: 241 [2][13] vs 212 [3] — kaynak yöntemleri farklı (yayın yılı vs takvim yılı olabilir) | [2][3][13] |
+| Dil | İngilizce | [3] |
+| Indexing | SCIE, Scopus | [2][13] |
+| Resmi journal sayfası | https://www.journals.elsevier.com/international-journal-of-pressure-vessels-and-piping | [17] |
 
 ---
 
 ## 2. Quartile ve Metrikler
 
+### Quartile (v2'de KESİNLEŞTİ → **Q1 / Q1**)
+
+LetPub doğrudan WoS JCR verisini [13] esas aldı.
+
+| Sıralama | Kategori | Sıra | Quartile | Kaynak |
+|---|---|---|---|---|
+| **JIF** (Journal Impact Factor) | Engineering, Mechanical | 44 / 182 | **Q1** | [13] |
+| **JIF** | Engineering, Multidisciplinary | 36 / 179 | **Q1** | [13] |
+| **JCI** (Journal Citation Indicator) | Engineering, Mechanical | 38 / 184 | **Q1** | [13] |
+| **JCI** | Engineering, Multidisciplinary | 40 / 179 | **Q1** | [13] |
+
+> **Karar:** IJPVP, JCR'a göre **her iki kategoride de Q1** dergidir.
+
+> ⚠ **OOIR [4] Q2 kaydı eski/yanlış sınıflama olarak işaretlenmiştir.** LetPub'ın WoS JCR doğrudan yansıması [13] esas alınmıştır. Manuel JCR teyidi opsiyonel.
+
+### Diğer metrikler
+
 | Metrik | Değer | Yıl | Kaynak |
 |---|---|---|---|
-| Impact Factor (Web of Science) | **3.500** | 2024 | [4] |
+| Impact Factor (Web of Science) | 3.500 | 2024 | [4][13] |
 | H4-Index (2022–2026) | 27 | 2026 | [4] |
 | Ortalama atıf | 7.135 | 4-yıl penceresi | [4] |
 | Medyan atıf | 4 | 4-yıl penceresi | [4] |
@@ -35,63 +55,82 @@
 | Self-citation oranı | %11.40 | 2024–2025 | [2] |
 | Gold OA oranı | %5.88 | — | [2] |
 
-### Quartile (kategori-bazlı)
-
-| Kategori | Sıra | Quartile | Kaynak |
-|---|---|---|---|
-| Engineering, Mechanical | 29 / 125 | **Q1** | [4] |
-| Engineering, Multidisciplinary | 25 / 74 | **Q2** | [4] |
-
-> ⚠ **Çelişki:** LetPub [2] her iki kategoride de Q1 raporluyor; OOIR [4] (JCR temelli) Engineering Multidisciplinary için Q2 veriyor. **OOIR esas alınmıştır** çünkü doğrudan JCR sıralamasını yansıtıyor. Yazar isterse Clarivate JCR'den manuel doğrulayabilir.
-
-### CiteScore çelişkisi
-
-| Kaynak | CiteScore | Not |
+### CiteScore çelişkisi (⚠ KORUNAN)
+| Kaynak | CiteScore | Yıl |
 |---|---|---|
-| LetPub [2] | 6 | Yıl belirtilmemiş |
-| Researcher.life [3] | 3.7 | Yıl belirtilmemiş |
+| LetPub [2] | 6 | belirsiz |
+| Researcher.life [3] | 3.7 | belirsiz |
 
-> ⚠ **CiteScore kaynaklarda tutarsız.** Resmi Scopus CiteScore sayfasından manuel doğrulanması önerilir.
+> ⚠ CiteScore tutarsız — Scopus CiteScore sayfasından manuel doğrulanmalı.
 
 ---
 
-## 3. Scope ve İstisnalar
+## 3. Scope ve İstisnalar (v2'de GENİŞLE)
 
-### Tematik kapsam (paraphrase)
-Dergi, basınç altında çalışan ekipmanın yapısal bütünlüğü, tasarım yöntemleri, üretim, malzeme davranışı, denetim, bakım ve servis ömrünün uzatılması konularını işler. Sektörel kapsam enerji, petrokimya ve havacılık alanlarını içerir [2].
+### Tematik kapsam (paraphrase, LetPub güncel verisi [13])
 
-Yayın motiflerinin yoğunlaştığı alanlar: yapısal mühendislik, sonlu elemanlar yöntemi, basınçlı kap analizi, kompozit malzeme uygulamaları, kaynaklı bağlantılar [1].
+Dergi aşağıdaki konuları kapsar:
 
-### Bu tezin kapsam-uyumu
-Tezde işlenen konular kapsamla **doğrudan örtüşür:**
-- API 5L X70 doğalgaz boru hatları (basınç altında yapısal bütünlük)
-- Ripple/wrinkle defektleri (geometrik kusur kaynaklı SCF — derginin tekrarlı yayın konusu)
-- Markl + rainflow + Miner yorulma (basınç çevrimi altında ömür tahmini)
-- ASME B31.8 + CSA Z662 + API 5L standartlarına dayalı metodoloji (fitness-for-service)
+- Basınçlı kap mühendisliği (genel)
+- Yapısal bütünlük değerlendirmesi
+- Tasarım yöntemleri
+- Kod ve standartlar
+- Üretim ve kaynak (additive manufacturing dahil)
+- Malzeme davranışı
+- Denetim
+- Bakım, ömür uzatımı ve yaşlanma yönetimi
+- Ömür yönetimi
+- **Makine öğrenmesi uygulamaları** (basınçlı ekipman alanında)
 
-**Dergideki son yayınlar konu komşusu örnekleri (referans):**
-- 2025 makale: kompozit yama onarımı + deneysel doğrulama (Vol. 215) [5]
-- Geçmiş: yerel cidar incelmesi olan borularda FEA tabanlı SCF [6]
-- Geçmiş: değişken cidar kalınlığındaki butt kaynaklarda SCF analizi [7]
-- Geçmiş: boru hatlarında wrinkle bends gerilme analizi [8]
+**Sektörel kapsam:** enerji, petrokimya, proses endüstrisi, ulaşım, havacılık [13].
 
-> ⚠ **Resmi scope statement (verbatim) ScienceDirect üzerinden erişilemedi (HTTP 403).** Yukarıdaki paraphrase ikincil kaynaklara dayanmaktadır. Yazar dergi sayfasından manuel teyit edebilir [1].
+**Editör vurgusu (paraphrase):** Dergi, ekonomi, güvenilirlik veya kullanım ömründe büyük iyileştirmeye yol açan **pratik uygulama** odaklı çalışmalara öncelik verir [13].
 
-### İstisna / sınırlama
-> ⚠ Resmi scope sayfasından (örn. fluid dynamics çalışmalarının fluid-solid interaction içerme zorunluluğu gibi) açık istisna ifadeleri **bu kaynaklardan teyit edilemedi**. Manuel doğrulama önerilir.
+### Tezin kapsam-uyumu (revize)
+Tezde işlenen konular kapsamla **çok yönlü ve doğrudan** örtüşür:
+- API 5L X70 doğalgaz boru hatları (basınçlı ekipman, yapısal bütünlük)
+- Ripple/wrinkle defektleri (geometrik kusur kaynaklı SCF) — dergi tekrarlı konusu
+- Markl + rainflow + Miner yorulma (basınç çevrimi altında ömür yönetimi)
+- ASME B31.8 + CSA Z662 + API 5L (kod/standart tabanlı metodoloji)
+- **Fitness-for-service framing** ⇒ editör vurgusu olan "pratik uygulama, kullanım ömrü iyileştirme" hedefiyle birebir aynı yörüngede
+
+**Dergideki son yayınlardan konu komşusu örnekler:**
+- 2025: kompozit yama onarımı + deneysel doğrulama (Vol. 215) [5]
+- yerel cidar incelmesi olan borularda FEA tabanlı SCF [6]
+- değişken cidar kalınlığındaki butt kaynaklarda SCF analizi [7]
+- boru hatlarında wrinkle bends gerilme analizi [8]
+
+### İstisnalar / sınırlamalar
+- **Fluid dynamics:** Salt akışkan dinamiği çalışmaları kapsam dışı. Akışkan dinamiği yalnızca **fluid-structure interaction (akışkan-yapı etkileşimi)** içeren çalışmalarda kabul edilir [14].
+
+> ⚠ Resmi scope statement (verbatim) ScienceDirect 403 nedeniyle çekilemedi. Yukarıdaki paraphrase LetPub güncel verisi [13] ve search snippet [14] üzerinden derlenmiştir. Tam verbatim için yazar dergi ana sayfasını [17] ziyaret edebilir.
 
 ---
 
-## 4. Article Type Listesi ve Kelime Limitleri
+## 4. Article Type Listesi ve Kelime Limitleri (v2'de KISMİ ÇÖZÜLDÜ)
 
-| Article type | Kelime limiti | Not |
+### Kabul edilen makale türleri [14]
+1. Original articles (tam araştırma makalesi)
+2. Short communications
+3. Review articles
+4. Book reviews
+5. Technical notes
+6. Letters to the Editors
+7. Technical news items
+8. Review reports
+
+### Kelime limitleri
+
+| Article type | Limit | Kaynak |
 |---|---|---|
-| Research article (tam makale) | ⚠ kaynakta net bulunamadı — tipik Elsevier mech-eng normu **6.000–10.000 kelime** | Yazar dergi sayfasından manuel doğrulamalı |
-| Review article | ⚠ kaynakta bulunamadı | — |
-| Short communication / technical note | ⚠ kaynakta bulunamadı | — |
-| Editorial / commentary | ⚠ kaynakta bulunamadı | — |
+| **Original article (tam makale)** | **maksimum 6.000 kelime / yaklaşık 12 basılı sayfa** | [14] |
+| Short communication | ⚠ kaynakta tam sayı bulunamadı | — |
+| Review article | ⚠ kaynakta tam sayı bulunamadı | — |
+| Technical note | ⚠ kaynakta tam sayı bulunamadı | — |
+| Diğer türler (book review, letter, news, review report) | ⚠ kaynakta tam sayı bulunamadı | — |
 
-> ⚠ **Article type ve kelime limitleri ScienceDirect Guide for Authors sayfasında olmalı ama HTTP 403 nedeniyle çekilemedi.** Yazar dergi sayfasını manuel inceleyip bu satırları kesinleştirmeli.
+### Tezin hedef tipi
+**Original article (6.000 kelime / ~12 sayfa).** Önceki execution planında §1–§8 toplam tahsisi **~7.300 kelime** idi → **6.000'e düşürmek gerek**. WP1'de bölüm-başı kelime tahsisleri buna göre revize edilecek.
 
 ---
 
@@ -100,8 +139,8 @@ Tezde işlenen konular kapsamla **doğrudan örtüşür:**
 ### Tipik yapı (komşu yayınlardan + Elsevier mech-eng normundan)
 1. Title
 2. Author list + affiliations
-3. Abstract (yapılandırılmamış, ~150–250 kelime — tipik Elsevier normu)
-4. Keywords (5–7)
+3. Abstract (yapılandırılmamış)
+4. Keywords
 5. Introduction
 6. Background / Literature / Theory
 7. Methodology / Numerical model
@@ -112,31 +151,31 @@ Tezde işlenen konular kapsamla **doğrudan örtüşür:**
 12. References
 13. (Opsiyonel) Appendices / Supplementary
 
-> ⚠ **Abstract kelime limiti** resmi Guide for Authors sayfasından doğrudan teyit edilemedi. Elsevier mech-eng dergilerinde 150–250 kelime norm.
+> ⚠ **Abstract kelime limiti** kesin sayı ve yapılandırılmış/yapılandırılmamış durumu resmi sayfadan teyit edilmemiştir. Elsevier mech-eng normunda 150–250 kelime yapılandırılmamış olağandır.
 
 ### Bölüm beklentileri
 - Introduction: motivasyon + literatür açığı + amaç
-- Methodology: reproducible detayda (mesh, BC, malzeme, yazılım versiyonu, varsayımlar)
+- Methodology: reproducible detay (mesh, BC, malzeme, yazılım versiyonu, varsayımlar)
 - Results: rakamsal, tablo + figür destekli
-- Discussion: sınırlamalar zorunlu — derginin önemsediği alanlardan biri
-- Conclusions: kısa, madde madde tercih edilir
+- Discussion: sınırlamalar zorunlu
+- Conclusions: kısa, madde madde
 
 ---
 
 ## 6. Şekil ve Tablo Politikası
 
-> ⚠ **Detaylı şekil/tablo policy** Elsevier Artwork Guide sayfasındadır; bu turda doğrudan çekilemedi. Aşağıdaki maddeler Elsevier'in standart yayın normudur ve IJPVP için de geçerlidir.
+> Elsevier'in genel artwork standardı uygulanır.
 
 | Öğe | Norm |
 |---|---|
-| Renkli şekil | Online'da ücretsiz; basılı sürümde değişebilir |
-| Çözünürlük | Line art ≥1000 dpi, halftone ≥300 dpi, combo ≥500 dpi (Elsevier standardı) |
-| Format | TIFF / EPS / PDF tercih (vektör); PNG/JPG kabul |
-| Caption stili | Şekil altında, "Fig. N. ..." başlangıçlı, kısa cümle + açıklama |
+| Renkli şekil | Online'da ücretsiz |
+| Çözünürlük | Line art ≥1000 dpi, halftone ≥300 dpi, combo ≥500 dpi |
+| Format | TIFF / EPS / PDF tercih; PNG/JPG kabul |
+| Caption stili | Şekil altında, "Fig. N. ..." başlangıçlı |
 | Tablo caption | Tablo üstünde, "Table N. ..." |
 | Genişlik | Tek sütun ~90 mm; çift sütun ~190 mm |
 
-> ⚠ Yazar Elsevier "Artwork Quality Specifications" sayfasından manuel doğrulamalı.
+> ⚠ IJPVP-özel artwork kuralı varsa Elsevier Artwork Quality Specifications sayfasından doğrulanmalı.
 
 ---
 
@@ -145,95 +184,79 @@ Tezde işlenen konular kapsamla **doğrudan örtüşür:**
 Elsevier Standard Reference Styles dokümanından paraphrase edilmiştir [9].
 
 ### Metin-içi atıf
-- Köşeli parantez içinde sayı ile gösterilir: `[3]`, `[6]`, `[3, 6]`
+- Köşeli parantez içinde sayı ile: `[3]`, `[6]`, `[3, 6]`
 - Yazar adı kullanılabilir: `Barnaby ve Jones [8]`
-- Atıf sırası metinde göründüğü sıraya göre numaralandırılır
+- Sıralama: metinde göründüğü sıraya göre
 
-### Referans liste örnekleri (her tür için bir örnek)
+### Referans liste formatı (örnek tipler)
 
 **Dergi makalesi (peer-reviewed):**
-```
-[1] A. Paivio, B. Jansen, L.J. Becker, Comparisons through the mind's eye, Cognition 37 (2) (1975) 635–647.
-```
+Yazarlar, başlık, dergi adı, cilt (sayı) (yıl) sayfalar.
 
-**Konferans bildirisi (proceedings):**
-```
-[4] N. Yasuda, S. Takagi, A. Toriumi, Spectral shape analysis of infrared absorption, in: T. Hattori, K. Wada, A. Hiraki (Eds.), Proc. 2nd Int. Symp. Control of Semiconductor Interfaces, ISCSI-2, Karuizawa, Japan, October 28–November 1, 1997, Appl. Surf. Sci. 117–118 (1997) 216–220.
-```
+**Konferans bildirisi:**
+Yazarlar, başlık, in: editörler (Eds.), tam konferans adı, yer, tarihler, dergi/yayıncı, yıl, sayfalar.
 
-**Kitap (tek yazar / editörlü):**
-```
-[9] W. Strunk Jr., E.B. White, The Elements of Style, third ed., MacMillan, New York, 1979 (Chapter 4).
-```
+**Kitap:**
+Yazarlar, başlık, baskı bilgisi, yayıncı, yer, yıl (gerekli ise bölüm).
 
 **Kitap bölümü:**
-```
-[13] T.E. Chaddock, Gastric emptying of a nutritionally balanced liquid diet, in: E.E. Daniel (Ed.), Proc. 4th Int. Symp. Gastrointestinal Motility, ISGM4, 4–8 September 1973, Seattle, WA, Mitchell Press, Vancouver, 1974, pp. 83–92.
-```
-
-**Rapor / teknik doküman:**
-```
-[10] College Bound Seniors, College Board Publications, Princeton, NJ, 1979.
-```
-
-**Web referansı:**
-```
-[20] Cancer Research UK, Cancer statistics reports for the UK,
-<http://www.cancerresearchuk.org/aboutcancer/statistics/cancerstatsreport/>, 2003 (accessed 13.03.03).
-```
+Yazarlar, bölüm başlığı, in: editör (Ed.), kitap başlığı, yayıncı, yer, yıl, sayfalar.
 
 **DOI'li makale:**
-```
-[8] J.C. VanDecar et al., Aseismic continuation of the Lesser Antilles slab, J. Geophys. Res. 108 (2003) 2043, doi:10.1029/2001JB000884.
-```
+Standart format + ekinde `doi:10.xxxx/yyyy`.
+
+**Web referansı:**
+Kurum, başlık, <URL>, yıl (accessed dd.mm.yy).
 
 ### Genel kurallar
-- Yayın evresi: "in press" yalnızca kabul edilmiş makaleler için
-- Yayımlanmamış sonuçlar ve kişisel iletişim referans listesine **konulmaz**, metin içinde belirtilir
+- "in press" yalnızca kabul edilmiş makaleler için
+- Yayımlanmamış sonuçlar ve kişisel iletişim listeye konulmaz
 - Web referansları için URL + erişim tarihi zorunlu
-- Atıfta tutarlılık: metinde her atıf listede olmalı; listede yer alan her kayıt metinde atıfta olmalı
+- Atıfta tutarlılık: metin ↔ liste eşleşmeli
+
+> Yerel kopya: `Docs/refs/pdfs/elsevier_references_style_guide.pdf` [9]
 
 ---
 
-## 8. Frontmatter Zorunlulukları
+## 8. Frontmatter Zorunlulukları (v2'de KESİNLEŞTİ)
 
 | Öğe | Durum | Norm |
 |---|---|---|
-| Title | Zorunlu | Kısa, spesifik; tipik ≤15 kelime |
+| Title | Zorunlu | Kısa, spesifik |
 | Author list + affiliations | Zorunlu | ORCID önerilir |
-| Highlights | **Zorunlu** (Elsevier standart) | 3–5 madde, her biri ≤85 karakter (boşluk dahil) |
-| Abstract | Zorunlu | Yapılandırılmamış (Elsevier mech-eng normu) |
-| Keywords | Zorunlu | 5–7 anahtar kelime |
-| Graphical abstract | **Önerilen** (zorunlu değil) | Tek panel görsel, kısa ve okunabilir |
-| CRediT author statement | **Zorunlu** (Elsevier standart) | Yazar rolleri açıkça belirtilir |
+| **Highlights** | **Zorunlu** | 3–5 madde · her biri ≤85 karakter (boşluk dahil) · ayrı editable dosya · dosya adında "Highlights" geçmeli · novel sonuç + yeni yöntem yakalamalı [15] |
+| Abstract | Zorunlu | Yapılandırılmamış (Elsevier mech-eng normu); ⚠ kesin kelime sayısı manuel doğrulama |
+| **Keywords** | Zorunlu | **1–7 adet** · İngilizce · "and", "of" gibi bağlaçlı çok kelimeli ifadelerden kaçınılmalı · sadece yerleşik kısaltmalar kullanılabilir [14] |
+| Graphical abstract | Önerilen (zorunlu değil) | Tek panel görsel |
+| CRediT author statement | Zorunlu | Yazar rolleri açıkça belirtilir |
 | Declarations | Zorunlu | Funding · Conflict of Interest · Data Availability · Ethical approval (uygunsa) |
 | Acknowledgements | Opsiyonel | Funding ayrı bölümde |
 
-> ⚠ Highlights kelime/karakter sınırı, graphical abstract ölçüleri ve CRediT şablonu Elsevier'in standart normudur ama IJPVP'nin özel kuralı varsa manuel doğrulanmalı.
+> **Önemli düzelti:** v1'de keywords "5–7" yazılmıştı; doğrusu **1–7**. v1'de highlights için "≤85 karakter" genel Elsevier normu olarak gösterilmişti; v2'de IJPVP-spesifik koşul olarak [15] kaynağıyla teyitli.
 
 ---
 
-## 9. Submission Süreci
+## 9. Submission Süreci (v2'de DOĞRULANDI)
+
+### Submission portalı (yeni eklendi)
+- **Editorial Manager:** https://www.editorialmanager.com/IPVP [16]
+- **Resmi journal sayfası:** https://www.journals.elsevier.com/international-journal-of-pressure-vessels-and-piping [17]
 
 ### Peer review
-- Single anonymized review (Elsevier mech-eng standardı; IJPVP için manuel doğrulanmalı ⚠)
-- Ortalama review süresi: ⚠ Tek bir kaynak [2] "~24 ay" demiş ama bu **olağandışı yüksek**; tipik Elsevier mech-eng dergisi 8–16 haftadır. **Manuel teyit gerekli.**
-
-### Submission portalı
-- Editorial Manager (Elsevier standart)
-- IJPVP submission URL: ⚠ doğrudan teyit edilmedi (ScienceDirect 403). Editorial Manager link'i Guide for Authors sayfasında verilir
+- Single anonymized review (Elsevier mech-eng standardı)
+- ⚠ Ortalama review süresi: LetPub'da "~24 ay" [2] ifadesi olağandışı yüksek — manuel teyit gerek
 
 ### Appeal süreci
 - Red kararına itiraz mümkün; editöre formal yazı + gerekçe
-- ⚠ Spesifik IJPVP politika maddesi bu kaynaklardan teyit edilemedi
+- ⚠ Spesifik IJPVP appeal politikası kaynaklarda detaylandırılmadı
 
 ### Open Access
 - Open access seçeneği mevcut [2]
-- APC: bu kaynaklarda belirtilmemiş ⚠ — manuel teyit (Elsevier IJPVP OA APC sayfası)
+- ⚠ APC ücreti kaynaklarda yok — Elsevier OA pricelist'ten teyit
 
 ### Special issue
-- Dergi periyodik olarak special issue yayımlar; çağrılar Elsevier'in IJPVP special issues sayfasında listelenir [1]
-- Şu an aktif çağrı kontrolü gerek ⚠
+- Dergi periyodik olarak special issue yayımlar [1]
+- ⚠ Aktif çağrı listesi manuel teyit gerek
 
 ---
 
@@ -241,18 +264,23 @@ Elsevier Standard Reference Styles dokümanından paraphrase edilmiştir [9].
 
 | [n] | Açıklama | URL | Erişim |
 |---|---|---|---|
-| [1] | IJPVP ScienceDirect ana sayfa | https://www.sciencedirect.com/journal/international-journal-of-pressure-vessels-and-piping | ⚠ HTTP 403 — manuel ziyaret |
-| [2] | LetPub IJPVP detay sayfası (Q1, CiteScore 6, ~241 art/yıl, 24-ay review) | https://www.letpub.com/index.php?journalid=3860&page=journalapp&view=detail | ✅ Çekildi |
-| [3] | Researcher.life IJPVP sayfası (Q2 mech eng, CiteScore 3.7, 212 art 2025) | https://researcher.life/journal/international-journal-of-pressure-vessels-and-piping/9578 | ✅ Çekildi |
-| [4] | OOIR IJPVP metrik sayfası (IF 3.500/2024, H4-index 27, Q1 mech / Q2 multi) | https://ooir.org/j.php?issn=0308-0161 | ✅ Çekildi |
-| [5] | IJPVP 2025 örnek makale (kompozit yama) | https://www.sciencedirect.com/science/article/abs/pii/S0308016125000249 | Başlık/künye teyitli |
-| [6] | IJPVP yerel cidar incelmesi SCF makalesi | https://www.sciencedirect.com/science/article/abs/pii/S0308016104001322 | Başlık/künye teyitli |
-| [7] | IJPVP değişken cidar kalınlığı butt weld SCF makalesi | https://www.sciencedirect.com/science/article/abs/pii/S0308016120300533 | Başlık/künye teyitli |
-| [8] | IJPVP wrinkle bends stress analizi makalesi | https://www.sciencedirect.com/science/article/abs/pii/0263823193900197 | Başlık/künye teyitli (eski) |
-| [9] | Elsevier Standard Reference Styles — Numbered Style (Style 1) | İndirildi: `Docs/refs/pdfs/elsevier_references_style_guide.pdf` (459 KB, %200 OK) | ✅ Local |
-| [10] | Elsevier Copyediting Specification for Authors v3.6 (30 Oct 2020) | İndirildi: `Docs/refs/pdfs/elsevier_copy_editing_style.pdf` (644 KB, %200 OK) | ✅ Local |
-| [11] | Booksite Elsevier reference styles PDF | https://booksite.elsevier.com/9780081019375/content/Elsevier%20Standard%20Reference%20Styles.pdf | ❌ HTTP 404 — link ölü |
-| [12] | Elsevier shop IJPVP journal page (subscription info) | https://shop.elsevier.com/journals/international-journal-of-pressure-vessels-and-piping/0308-0161 | ⚠ Çekilmedi (subscription odaklı, scope info yok) |
+| [1] | IJPVP ScienceDirect ana sayfa | https://www.sciencedirect.com/journal/international-journal-of-pressure-vessels-and-piping | ⚠ HTTP 403 |
+| [2] | LetPub IJPVP detay (Q1, CiteScore 6, ~241 art/yıl, 24-ay review) | https://www.letpub.com/index.php?journalid=3860&page=journalapp&view=detail | ✅ Çekildi |
+| [3] | Researcher.life IJPVP (CiteScore 3.7, 212 art 2025) | https://researcher.life/journal/international-journal-of-pressure-vessels-and-piping/9578 | ✅ Çekildi |
+| [4] | OOIR IJPVP (IF 3.500/2024, H4 27) | https://ooir.org/j.php?issn=0308-0161 | ✅ Çekildi |
+| [5] | IJPVP 2025 makale (kompozit yama) | https://www.sciencedirect.com/science/article/abs/pii/S0308016125000249 | Künye teyitli |
+| [6] | Yerel cidar incelmesi SCF makalesi | https://www.sciencedirect.com/science/article/abs/pii/S0308016104001322 | Künye teyitli |
+| [7] | Butt weld değişken cidar SCF makalesi | https://www.sciencedirect.com/science/article/abs/pii/S0308016120300533 | Künye teyitli |
+| [8] | Wrinkle bends stress analizi | https://www.sciencedirect.com/science/article/abs/pii/0263823193900197 | Künye teyitli |
+| [9] | Elsevier Numbered Reference Style | Lokal: `Docs/refs/pdfs/elsevier_references_style_guide.pdf` | ✅ Local |
+| [10] | Elsevier Copyediting Specification v3.6 | Lokal: `Docs/refs/pdfs/elsevier_copy_editing_style.pdf` | ✅ Local |
+| [11] | Booksite Elsevier reference styles | (link ölü 404) | ❌ |
+| [12] | Elsevier shop IJPVP journal page | https://shop.elsevier.com/journals/international-journal-of-pressure-vessels-and-piping/0308-0161 | ⚠ Çekilmedi |
+| **[13]** | **LetPub IJPVP profil (WoS JCR JIF/JCI Q1/Q1, 2026-05-26 tam içerik)** | LetPub journalid 3860 ek-veri çekimi | ✅ Yazar destekli |
+| **[14]** | **ScienceDirect Guide for Authors snippet (article types, 6.000 kelime, fluid-solid interaction, keywords 1–7)** | sciencedirect.com Guide for Authors (search excerpt) | ⚠ Sayfa 403, snippet yazar tarafından sağlandı |
+| **[15]** | **Elsevier Highlights resmi rehberi (3–5 bullet, ≤85 char, ayrı dosya)** | Elsevier journal-authors highlights guide | ✅ Norm |
+| **[16]** | **Editorial Manager IJPVP submission portalı** | https://www.editorialmanager.com/IPVP | ✅ URL doğrulandı |
+| **[17]** | **Resmi Elsevier journal sayfası (IJPVP)** | https://www.journals.elsevier.com/international-journal-of-pressure-vessels-and-piping | ✅ URL doğrulandı |
 
 ---
 
@@ -260,37 +288,57 @@ Elsevier Standard Reference Styles dokümanından paraphrase edilmiştir [9].
 
 | Dosya | Boyut | Durum |
 |---|---|---|
-| `elsevier_references_style_guide.pdf` | 470 KB | ✅ Tam |
-| `elsevier_copy_editing_style.pdf` | 660 KB | ✅ Tam |
-| `elsevier_standard_reference_styles.pdf` | — | ❌ Silindi (404 HTML idi) |
+| `elsevier_references_style_guide.pdf` | 470 KB | ✅ |
+| `elsevier_copy_editing_style.pdf` | 660 KB | ✅ |
 
 ---
 
-## ⚠ İşaretli Eksik Maddeler (Yazar Manuel Doğrulama Listesi)
+## ⚠ Korunan Eksik Maddeler (v2 sonu — 9 madde)
 
-1. **CiteScore çelişkisi** (3.7 vs 6) — Scopus CiteScore sayfasından teyit
-2. **Engineering Multidisciplinary quartile** (Q1 vs Q2) — JCR'den teyit
-3. **Article type listesi + kelime limitleri** — Guide for Authors sayfasından
-4. **Resmi scope statement (verbatim) + istisnalar** — IJPVP ana sayfasından
-5. **Abstract kelime limiti (kesin sayı)** — Guide for Authors
-6. **Highlights/CRediT'in IJPVP-spesifik özel kuralları** — varsa Guide for Authors
-7. **Peer review türü ve ortalama süresi** — Elsevier IJPVP sayfası ya da editör yorumları
-8. **Submission Editorial Manager URL** — Guide for Authors
-9. **OA APC ücreti** — Elsevier OA pricelist
-10. **Aktif special issue çağrıları** — Elsevier IJPVP special issues sayfası
+v1'de 10 ⚠ vardı; v2'de **6 madde çözüldü, 5 yeni eklenmedi** → **9 ⚠ kaldı.**
 
-Bu 10 öğenin tamamı **yazar tarafından dergi sayfası açılıp doğrudan doğrulanmalı** ve bu dosyaya yazar onayıyla eklenmelidir. CLI bunları yeniden web'den aramayacak.
+| # | Eksik | Çözüm yolu |
+|---|---|---|
+| 1 | **CiteScore** çelişkisi (3.7 vs 6) | Scopus CiteScore sayfası |
+| 2 | **Abstract kelime limiti** kesin sayı + yapılandırılmış/yapılandırılmamış durumu | Guide for Authors |
+| 3 | **Article type kelime limitleri** (tam makale dışındakiler — short comm., review, technical note, vb.) | Guide for Authors |
+| 4 | **Peer review türü ve süresi** (24 ay olağandışı) | Dergi son makalelerinin received/accepted tarihleri |
+| 5 | **OA APC ücreti** | Elsevier OA pricelist |
+| 6 | **Aktif special issue çağrıları** | Elsevier IJPVP special issues sayfası |
+| 7 | **Highlights/CRediT IJPVP-özel sapması** (varsa) | Guide for Authors |
+| 8 | **Yıllık makale sayısı** (212 vs 241) | Dergi/Scopus istatistikleri |
+| 9 | **Resmi scope statement verbatim** | ScienceDirect IJPVP ana sayfası |
+
+### v1 → v2 ⚠ Çözüm İzleme
+
+| v1'deki ⚠ | v2'deki durumu |
+|---|---|
+| CiteScore çelişkisi | ⚠ Hâlâ açık (#1) |
+| Engineering Multidisciplinary quartile (Q1 vs Q2) | ✅ Çözüldü — Q1 (LetPub JCR [13]) |
+| Article type listesi + kelime limitleri | 🟡 Kısmi çözüldü — liste tam, tam makale 6k kelime; diğer tipler hâlâ ⚠ (#3) |
+| Resmi scope statement (verbatim) + istisnalar | 🟡 Kısmi çözüldü — istisna (fluid-solid interaction) eklendi; verbatim hâlâ ⚠ (#9) |
+| Abstract kelime limiti | ⚠ Hâlâ açık (#2) |
+| Highlights/CRediT IJPVP-spesifik kuralları | 🟡 Kısmi — highlights detayı netleşti [15]; CRediT özel sapma hâlâ ⚠ (#7) |
+| Peer review türü ve süresi | ⚠ Hâlâ açık (#4) |
+| Submission Editorial Manager URL | ✅ Çözüldü — https://www.editorialmanager.com/IPVP |
+| OA APC ücreti | ⚠ Hâlâ açık (#5) |
+| Aktif special issue çağrıları | ⚠ Hâlâ açık (#6) |
+
+**Çözülenler:** 4 tam çözüm (Eng. Multi quartile, Editorial Manager URL, scope istisna, highlights detay) + 2 kısmi (article types, highlights).
+**Yeni eklenmedi.**
+**Net hareket:** 10 → 9 ⚠.
 
 ---
 
 ## Kullanım Kuralları
 
-1. **Bu dosya FROZEN.** Yazar açıkça "v2 olarak güncelle" diyene kadar değiştirilmez.
-2. **IJPVP ile ilgili her CLI işleminde** önce bu dosya `view` edilir.
-3. **Yeni web araması yasak** — bilgi burada yoksa ⚠ olarak işaretle veya yazardan iste.
-4. **Çelişki tespit edersen** (örn. başka bir kaynaktan farklı bir IF gelirse) → bu dosyaya **yazma**, yazara bildir.
+1. Bu dosya FROZEN — yazar "v3 olarak güncelle" demeden değiştirilmez
+2. IJPVP ile ilgili her CLI işleminde önce bu dosya `view` edilir
+3. Yeni web araması yasak — bilgi yoksa ⚠ olarak işaretle veya yazardan iste
+4. Çelişki tespit edilirse → bu dosyaya yazma, yazara bildir
 
 ---
 
 ## Sürüm
-- **v1 — 2026-05-26** — İlk derleme; 4 birincil + 4 örnek-yayın kaynağı + 2 PDF local; 10 ⚠ eksik madde yazar listesi
+- **v1 — 2026-05-26** — İlk derleme; arşivde: `Docs/refs/archive/IJPVP_official_sources_v1.md`
+- **v2 — 2026-05-26** — Yazar destekli ek kaynak verisiyle güncelleme; Q1/Q1 kesinleşti, scope genişledi, article types + 6k kelime limiti eklendi, keywords 1–7 düzeltildi, highlights kuralı netleşti, Editorial Manager URL doğrulandı

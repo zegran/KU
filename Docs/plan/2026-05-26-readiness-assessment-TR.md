@@ -131,6 +131,49 @@ IJPVP'nin reddetme nedenleri arasında **scope mismatch** ihtimali çok düşük
 ## Sürüm
 - **v1 — 2026-05-26** — Tez tam okuma + IJPVP profil teyidi sonrası ilk hazırlık değerlendirmesi
 - **v1.1 — 2026-05-26** — IJPVP_official_sources.md (FROZEN) sonrası yeniden değerlendirme (aşağıdaki Addendum)
+- **v1.2 — 2026-05-26** — IJPVP_official_sources v2 (Q1/Q1, 6.000 kelime, fluid-solid interaction, keywords 1–7) entegrasyonu (alttaki Patch)
+
+---
+
+## Patch v1.2 — IJPVP_official_sources v2 Sonrası Düzeltmeler
+
+**Tetik:** `Docs/refs/IJPVP_official_sources.md` v2'ye yükseltildi. Aşağıdaki revizyonlar v1.1 üzerine biner.
+
+### Değişen bilgiler
+
+| Konu | v1.1'deki kayıt | v2 doğrulu | Skor etkisi |
+|---|---|---|---|
+| Quartile | Q1 Mech / **Q2 Multi** | **Q1 / Q1 (her ikisi)** | (+) Üst tier konumlanma, dergi prestiji daha yüksek |
+| Yıllık makale | ~212–241 (çelişki) | Çelişki açık (⚠) | Nötr |
+| Kelime limiti | Bilinmiyordu (önceki ~7.300 kelime plan) | **Original article: 6.000 kelime / ~12 sayfa** | (–) Tasarımda yeniden tahsis gerekecek; rev WP1'de |
+| Article types | Bilinmiyordu | 8 tip; tezin hedefi: **Original article** | Nötr |
+| Keywords | "5–7" yazılmıştı (genel norm) | **1–7** + and/of yasak | Nötr (formal düzeltme) |
+| Highlights | "≤85 char" genel norm | IJPVP-spesifik teyitli: 3–5 bullet, ayrı dosya | Nötr |
+| Submission portal | Bilinmiyordu | **Editorial Manager: https://www.editorialmanager.com/IPVP** | (+) Plan kesinleşti |
+| Scope | Genel | **ML uygulamaları + additive manufacturing dahil; FFS pratik vurgu** | (+) Tezin FFS framing'i editör vurgusuyla birebir aynı |
+
+### Skor revizyonu (v1.1 → v1.2)
+
+Anchor claim netliği v1.1'de 8.5/10 idi. v2'de "editör vurgusu = FFS pratik uygulama" doğrulaması ile **9.0/10**'a yükselir. Kabul olasılığı +%2–3 yukarı.
+
+| Boyut | Ağırlık | v1.1 | v1.2 | Gerekçe |
+|---|---|---|---|---|
+| (a) İçerik derinliği | 25% | 7.5 | **7.5** | Değişmedi |
+| (b) Doğrulama | 25% | 6.5 | **6.5** | Değişmedi |
+| (c) Şekil kalitesi | 15% | 4 | **4** | Değişmedi |
+| (d) Literatür güncelliği | 15% | 5 | **5** | Değişmedi |
+| (e) Anchor claim netliği | 20% | 8.5 | **9.0** | Editör pratik-uygulama vurgusu ile FFS framing tam örtüşüyor |
+| **TOPLAM** | 100% | 65.5 | **66.5** | +1 puan |
+
+**Kabul olasılığı (v1.2):**
+- Full prep senaryosu: **%67–77**
+- V1 atlanır: **%52–62**
+
+### Plan üzerindeki düzeltme tetikleyicileri (WP1'de uygulanacak)
+1. **6.000 kelime hedefine yeniden tahsis:** Önceki §1–§8 toplam ~7.300 kelime planı → **§1=600, §2=700, §3=700, §4=1.000, §5=850, §6=1.200, §7=750, §8=200 ≈ 6.000 kelime**. WP1'de revize edilecek.
+2. **Keywords listesi:** "5–7" → "1–7" notu WP1 plan tablosunda
+3. **Editorial Manager URL** WP7 submission package planına eklendi (zaten not edildi)
+4. **Original article hedefi** — short communication, technical note alternatif değil; tezin scope'u tam makale gerektirir
 
 ---
 
