@@ -1,0 +1,63 @@
+# ──────────────────────────────────────────────
+# Secrets & local-only config
+# ──────────────────────────────────────────────
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+.claude/settings.json
+.claude/settings.local.json
+.claude/.credentials*
+
+# ──────────────────────────────────────────────
+# Source thesis (local-only, copyright protected)
+# Original .docx is local reference; never tracked.
+# ──────────────────────────────────────────────
+_Archive/
+*.docx
+*.doc
+
+# ──────────────────────────────────────────────
+# OS / Editor
+# ──────────────────────────────────────────────
+Thumbs.db
+.DS_Store
+desktop.ini
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# ──────────────────────────────────────────────
+# Python (if scripts added later)
+# ──────────────────────────────────────────────
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ──────────────────────────────────────────────
+# LaTeX build artifacts (WP7'de oluşacak)
+# ──────────────────────────────────────────────
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# ──────────────────────────────────────────────
+# Temporary / scratch
+# ──────────────────────────────────────────────
+/temp/
+/tmp/
+*.tmp
+*.bak
+~$*
