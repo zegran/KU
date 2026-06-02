@@ -1,0 +1,33 @@
+<!--
+WP5e Introduction draft (Section A: absorbs Background + ILI). Rewrite SOP (paraphrase).
+~950 word target. Citations [n] PROVISIONAL (WP6b). Front-loads the 4 contributions.
+Source: thesis 357-484 (Giris + API 5L X70 + ILI), condensed and re-sequenced.
+-->
+
+# 1. Introduction
+
+Long-distance gas transmission pipelines rarely follow a straight route. Terrain, geotechnical conditions and existing infrastructure force changes of direction, and these are commonly achieved by field bending—plastically curving straight joints on site with a hydraulic bending machine—rather than by installing factory elbows, because field bends reduce the number of girth welds and are economical at large diameter [1,3]. During bending the pipe wall is stretched on the extrados and compressed on the intrados, and in thin-walled, high $D/t$ pipe the intrados compression can produce shallow, periodic crest–trough distortions of the wall [2]. These low-amplitude features, termed mild ripples, are distinguished in CSA Z662 from severe buckles: they do not constitute an imminent collapse mechanism, but they do perturb the local stress field [1,4].
+
+The material context sharpens the question. Modern transmission increasingly uses high-strength low-alloy grades such as API 5L X70, whose combination of high yield strength and adequate ductility permits thinner walls and higher operating pressures [5]. The same thinner walls, however, make the local stress elevation produced by a geometric imperfection more consequential, because the elastic stress concentration that governs crack initiation scales with the severity of the local curvature change [17]. Pipeline design codes recognise this tension only partially. ASME B31.8 and CSA Z662 define ripple and wrinkle geometries and impose dimensional limits, but they do not quantify the stress concentration or fatigue penalty that a given ripple carries [1,2]. In practice the codes leave the operator two options: remove every reported feature by cut-out or sleeve, or demonstrate acceptability through a rigorous engineering analysis [2]. Because the first route is conservative and costly, a defensible quantitative basis for the second is of direct practical value.
+
+Such a basis must begin with reliable field characterisation. In-line inspection with a geometry (caliper) tool measures the internal radius along and around the pipe and returns a radius map in which ripple regions appear as repeating axial bands of inward and outward deviation [F4]. These maps yield the parameters a numerical model needs—the axial wavelength, the crest-to-trough depth and the circumferential extent of the feature—and so connect the inspection record directly to a finite element representation. Finite element analysis is the established tool for converting that geometry into stress: it resolves the membrane and bending response in the ripple region, and code-referenced acceptance criteria for ripples have themselves been built on experimentally calibrated finite element results [4,7].
+
+The most widely used of these criteria is the IPC2002-27124 study of Rosenfeld et al. [4], which combined full-scale cyclic-pressure tests with elastic finite element analysis to express a ripple stress concentration factor as a power-law function of the normalised geometry, and to relate it to fatigue life through the Markl S–N framework. This correlation remains the reference for mild-ripple acceptance. It was, however, calibrated on the 12-to-36 in pipe sizes prevalent at the time. Contemporary transmission routinely uses 42, 48 and 56 in pipe, where the diameter-to-thickness ratio, the distribution of bending stiffness and the local stability behaviour all differ [6]. Whether a correlation whose geometry enters only through $D/t$ remains valid when the absolute diameter doubles is therefore an open question—and one with safety consequences, since an unconservative estimate would classify a genuinely severe ripple as benign. A second gap is methodological: ripple severity is usually reported as a single stress concentration factor, yet fatigue damage accumulates under a spectrum of operating pressure cycles, and the two have rarely been assessed together for ripples in large-diameter pipe.
+
+This work addresses both gaps by developing a parametric stress-concentration-to-life framework for mild ripples in large-diameter API 5L X70 pipelines and using it to establish an explicit acceptance threshold. A family of 38 elastic shell finite element analyses spanning three diameters (36, 48 and 56 in) at a fixed $D/t = 73.1$, organised as a Taguchi array with supporting wavelength sweeps, maps the dependence of the ripple stress concentration factor on ripple depth, wavelength and circumferential extent. The elastic factors are then carried into a load-controlled Markl–rainflow–Miner fatigue assessment under a realistic pressure spectrum. The contributions are:
+
+- a closed-form empirical correlation for the ripple stress concentration factor of large-diameter X70 pipe ($D/t = 73.1$), fitted to the finite element data with $R^2 = 0.916$ and a maximum error of 9%;
+- evidence that the IPC2002 correlation misrepresents the circumferential-extent dependence at large diameter, under-predicting wide ripples by more than 400%, together with the diameter dependence its $D/t$-only form omits;
+- an integrated fatigue assessment showing that damage is governed by the operating pressure spectrum as much as by the stress concentration factor, with moderately large cycles dominating;
+- a closed-form critical stress concentration factor and an accompanying master curve that translate the framework into a direct fitness-for-service accept / analyse / repair decision for in-line-inspection-detected ripples.
+
+The remainder of the paper is organised as follows. Section 2 presents the theoretical basis, the parametric design, the finite element model and its validation, and the fatigue methodology. Section 3 reports the parametric stress concentration results, the empirical correlation and the fatigue damage analysis. Section 4 develops the critical-threshold framework, examines the limitations of the existing correlation, and states the boundaries of the present results. Section 5 concludes.
+
+<!--
+DRAFT NOTES (WP6a):
+- ~950 words target; this draft ~830 content-words (~950 readable) — on target.
+- Background (API 5L X70, HSLA, code practice) and ILI characterisation folded in (Section A).
+- Contribution bullets mirror Conclusion (4) — keep consistent through WP6a.
+- Section roadmap matches 5-section fold (2 Methods / 3 Results / 4 Discussion / 5 Conclusions).
+- Citations provisional; [F4] dent-SCF IJPVP used for ILI/caliper context (verify exact use in WP6b).
+-->
