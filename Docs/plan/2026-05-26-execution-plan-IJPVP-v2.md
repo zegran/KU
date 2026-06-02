@@ -17,6 +17,26 @@
 
 ---
 
+## Güncel Durum (2026-06-02 itibarıyla)
+
+| WP | Durum | Çıktı |
+|---|---|---|
+| WP0a–d | ✅ | gate'ler + WP0d SOP (K4 yazar-üstlenimli) |
+| WP1 | ✅ | `WP1_thesis_to_paper_map.md` (Section A 5-fold, closed-form SCF_crit) |
+| WP2 | ✅ | `WP2_citation_pool.md` (~54 ref, dergi 2→15) |
+| WP3a | ✅ | `WP3a_figure_strategy.md` (7 main + 3 supp) |
+| WP3b | ✅ | `Docs/paper/figures/` 10 figür + manifest (anchor MF7 doğrulandı) |
+| WP4 | ✅ | `tables/*.tex` (4 main + 3 supp) + `equations.tex` (E1–E10) |
+| WP5a | ✅ | `sections/04_methods.md` (~1700 kelime) |
+| WP5b | ✅ | `sections/05_results.md` (~1300 kelime, IPC a/C işaret düzeltmesi) |
+| **WP5c** | ⏳ **sıradaki** | Discussion (anchor + IPC limit + FFS + limitations) |
+| WP5d–WP8 | ⏳ | bekliyor |
+
+**İlerleme: 8/26 WP.** Drafting omurgası (figür+tablo+denklem) kilitli; Methods+Results taslak.
+**Açık QA (WP6a):** 36" ortalama 1.89 vs tez-metni 1.96; a/C sapma işaretleri (L955) düzeltildi.
+
+---
+
 ## Sıralı Akış (v2)
 
 ```

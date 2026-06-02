@@ -1,8 +1,10 @@
 # 🚀 Oturum Devir Dosyası (Session Handover)
 
-> **Son oturum tarihi:** 2026-05-26
-> **Sonraki oturumda ilk okunacak dosya:** Bu dosya
-> **Sonraki adım:** Yazar `WP1 başlat` komutu vermeden CLI hiçbir yazıma başlamaz
+> ⚡ **GÜNCELLEME (2026-06-02):** WP1–WP5b tamamlandı. Güncel durum için `README.md` ve `Docs/plan/2026-05-26-execution-plan-IJPVP-v2.md` (Güncel Durum bölümü). **Sıradaki: WP5c (Discussion).** Aşağıdaki orijinal 2026-05-26 devir içeriği tarihsel referanstır.
+>
+> **Son oturum tarihi:** 2026-05-26 (orijinal) · 2026-06-02 (güncelleme)
+> **Sonraki oturumda ilk okunacak dosya:** Bu dosya → sonra README + execution-plan v2
+> **Sonraki adım:** `WP5c başlat` (Discussion)
 
 ---
 
