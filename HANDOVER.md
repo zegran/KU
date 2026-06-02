@@ -1,10 +1,43 @@
 # 🚀 Oturum Devir Dosyası (Session Handover)
 
-> ⚡ **GÜNCELLEME (2026-06-02):** WP1–WP5b tamamlandı. Güncel durum için `README.md` ve `Docs/plan/2026-05-26-execution-plan-IJPVP-v2.md` (Güncel Durum bölümü). **Sıradaki: WP5c (Discussion).** Aşağıdaki orijinal 2026-05-26 devir içeriği tarihsel referanstır.
->
-> **Son oturum tarihi:** 2026-05-26 (orijinal) · 2026-06-02 (güncelleme)
-> **Sonraki oturumda ilk okunacak dosya:** Bu dosya → sonra README + execution-plan v2
-> **Sonraki adım:** `WP5c başlat` (Discussion)
+---
+
+## ⚡ SESSION 2 STATE (2026-06-02) — ÖNCE BUNU OKU
+
+**Tek cümle:** WP1→WP5g tamamlandı; **tam IJPVP manuscript taslağı** (7 section + abstract + highlights + 10 figür + tablolar + denklemler + ~54 ref havuzu) hazır; sıradaki **`WP6a başlat`** (coherence/kalite fazı).
+
+### İlerleme: 16/26 WP ✅
+| Faz | Durum |
+|---|---|
+| WP0a-d (gate'ler + K4 SOP) | ✅ |
+| WP1 map · WP2 citation · WP3a/b figür · WP4 tablo/denklem | ✅ |
+| WP5a-g (Methods→Results→Discussion→Conclusion→Intro→Abstract→Highlights) | ✅ taslak |
+| **WP6a coherence** | ⏳ **SIRADAKİ** |
+| WP6b citation · WP6c anti-AI · WP6d iThenticate(yazar) · WP7a-e · WP8 | ⏳ |
+
+### Sabit kararlar (Session 2'de eklenen)
+- Section yapısı **Seçenek A (5-fold)**; gövde ~5230/6000 kelime
+- Anchor: **closed-form SCF_crit ≈ 1.57**, F8 master curve = `mf7_anchor_scf_threshold`
+- F8 çevrim varsayımı n=4/8/12/24 · V1 ek koşu yok · V3 çözülmüş
+- **K4: YÖK + iThenticate önlemleri YAZAR-üstlenimli** (artık bayrak açılmaz)
+
+### 🔴 WP6a'da çözülecek QA bayrakları (drafting'de saptandı)
+1. **36" ortalama** 1.89 (tablo) vs 1.96 (tez metni) — hangisi otoriter?
+2. **a/C sapma işaretleri** — Results formülden DOĞRU yazıldı (tez L955 ters); teyit
+3. **Notasyon** D/D_f/D_M tutarlılık · **Sürüm** V&V/Abaqus · **Çapraz ref** Fig/Table/Eq · **Citation [n]** provisional
+
+### İlk okuma sırası (yeni oturum)
+1. Bu blok → 2. `README.md` (workflow tablosu) → 3. `Docs/plan/2026-05-26-execution-plan-IJPVP-v2.md` (Güncel Durum) → 4. `Docs/paper/sections/` taslaklar → 5. `logs/2026-06-02-18-session-end-handover.md` (tam detay)
+
+### İlk komut: **`WP6a başlat`**
+
+> Aşağıdaki orijinal 2026-05-26 (Session 1) içeriği tarihsel referanstır.
+
+---
+
+> **Son oturum tarihi:** 2026-05-26 (Session 1) · 2026-06-02 (Session 2)
+> **Sonraki oturumda ilk okunacak dosya:** Bu dosya (Session 2 State bloğu)
+> **Sonraki adım:** `WP6a başlat`
 
 ---
 

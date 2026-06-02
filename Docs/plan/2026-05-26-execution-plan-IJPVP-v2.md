@@ -29,11 +29,16 @@
 | WP4 | ✅ | `tables/*.tex` (4 main + 3 supp) + `equations.tex` (E1–E10) |
 | WP5a | ✅ | `sections/04_methods.md` (~1700 kelime) |
 | WP5b | ✅ | `sections/05_results.md` (~1300 kelime, IPC a/C işaret düzeltmesi) |
-| **WP5c** | ⏳ **sıradaki** | Discussion (anchor + IPC limit + FFS + limitations) |
-| WP5d–WP8 | ⏳ | bekliyor |
+| WP5c | ✅ | `sections/06_discussion.md` (~1050 kelime, anchor closed-form) |
+| WP5d | ✅ | `sections/07_conclusion.md` (~230 kelime) |
+| WP5e | ✅ | `sections/01_introduction.md` (~950 kelime) |
+| WP5f | ✅ | `sections/00_abstract_title.md` (Title 15w, Abstract 196w, 6 keyword) |
+| WP5g | ✅ | `submission/Highlights.md` (5 bullet ≤85 char) |
+| **WP6a** | ⏳ **sıradaki** | Coherence pass (QA bayraklarını çözer) |
+| WP6b–WP8 | ⏳ | bekliyor |
 
-**İlerleme: 8/26 WP.** Drafting omurgası (figür+tablo+denklem) kilitli; Methods+Results taslak.
-**Açık QA (WP6a):** 36" ortalama 1.89 vs tez-metni 1.96; a/C sapma işaretleri (L955) düzeltildi.
+**İlerleme: 16/26 WP.** Tam manuscript taslağı (~5230/6000 kelime) + figür+tablo+denklem+abstract+highlights. Kalite fazı (WP6) sıradaki.
+**Açık QA (WP6a):** 36" ortalama 1.89 vs tez-metni 1.96; a/C sapma işaretleri (L955) Results'ta formülden düzeltildi (teyit); notasyon D/D_f/D_M; sürüm tutarsızlıkları; çapraz referans; provisional citation [n].
 
 ---
 

@@ -2,7 +2,7 @@
 
 > Systematic conversion of a Turkish MSc thesis on **ripple defect SCF & fatigue life in API 5L X70 high-strength gas pipelines** into a peer-reviewed English manuscript targeted at the *International Journal of Pressure Vessels and Piping* (Elsevier, Q1).
 
-**Status:** Drafting in progress · WP1–WP5b complete · **WP5c (Discussion) next** _(updated 2026-06-02)_
+**Status:** Full draft complete · WP1–WP5g done · **WP6a (coherence) next** _(updated 2026-06-02)_
 **Target journal:** International Journal of Pressure Vessels and Piping (IJPVP) — locked
 **Source:** TR MSc thesis (Korcan Ünal, 2026) — local-only, not tracked
 
@@ -67,12 +67,12 @@ Korc/
 | **WP4** | Tables + equation derivations | `publication-chart-skill` | ✅ Done (4 main + 3 supp tables, E1–E10) |
 | **WP5a** | **Methods** (first — most factual) | `ml-paper-writing` | ✅ Drafted (~1700 w) |
 | **WP5b** | **Results** | `ml-paper-writing` | ✅ Drafted (~1300 w) |
-| **WP5c** | **Discussion** | `ml-paper-writing` | ⏳ **Next** |
-| **WP5d** | **Conclusion** | `ml-paper-writing` | ⏳ |
-| **WP5e** | **Introduction** (second-to-last) | `ml-paper-writing` | ⏳ |
-| **WP5f** | **Abstract + Title** (last) | `ml-paper-writing` | ⏳ |
-| **WP5g** | **Highlights** | `ml-paper-writing` | ⏳ |
-| **WP6a** | Coherence pass | `paper-self-review` | ⏳ |
+| **WP5c** | **Discussion** | `ml-paper-writing` | ✅ Drafted (~1050 w, anchor) |
+| **WP5d** | **Conclusion** | `ml-paper-writing` | ✅ Drafted (~230 w) |
+| **WP5e** | **Introduction** (second-to-last) | `ml-paper-writing` | ✅ Drafted (~950 w) |
+| **WP5f** | **Abstract + Title** (last) | `ml-paper-writing` | ✅ Drafted (196 w, 15-w title) |
+| **WP5g** | **Highlights** | `ml-paper-writing` | ✅ Drafted (5 bullets) |
+| **WP6a** | Coherence pass | `paper-self-review` | ⏳ **Next** |
 | **WP6b** | Citation verification | `citation-verification` | ⏳ |
 | **WP6c** | Anti-AI / language polish | `writing-anti-ai` | ⏳ |
 | **WP6d** | iThenticate check (🔴 author) | — | ⏳ |
@@ -83,7 +83,7 @@ Korc/
 | **WP7e** | Final self-review | `paper-self-review` | ⏳ |
 | **WP8** | Submission (🔴 author) | — | ⏳ |
 
-**Progress: 8 / 26 WPs complete** (WP0a–d, WP1–WP4, WP5a–b). Drafting backbone (figures, tables, equations) locked; Methods + Results drafted.
+**Progress: 16 / 26 WPs complete** (WP0a–d, WP1–WP4, WP5a–g). Full manuscript drafted (~5230/6000 words) with figures, tables, equations, abstract and highlights. Quality phase (WP6) next.
 
 Each WP is gate-locked: no WP starts without author authorization; no WP is skipped. See `Docs/plan/WP_skill_mapping.md` for skill activation rules.
 
