@@ -1,0 +1,94 @@
+% Equation derivations for the IJPVP manuscript (WP4)
+% Notation deliberately disambiguated vs the thesis, which reused the
+% symbol D for diameter, flexural rigidity, and Miner damage.
+% Paper convention:  D = outer diameter ; D_f = flexural rigidity ; D_M = Miner damage.
+% Maps to thesis equation numbers in comments.
+
+% ---- E1  Thin-shell membrane stresses (thesis Eq. 3.1) ----
+\begin{equation}
+\sigma_{h} = \frac{P R}{t}, \qquad
+\sigma_{L} = \frac{P R}{2 t}
+\label{eq:thin_shell}
+\end{equation}
+
+% ---- E2  Flexural rigidity of the shell (thesis Eq. 3.3) ----
+\begin{equation}
+D_{f} = \frac{E\,t^{3}}{12\,(1-\nu^{2})}
+\label{eq:flexural_rigidity}
+\end{equation}
+
+% ---- E3  Pressure-based stress concentration factor (thesis Eq. 3.2 / 3.7) ----
+\begin{equation}
+\mathrm{SCF}_{P} = \frac{\sigma_{\max,\,\mathrm{local}}}{\sigma_{h,\,\mathrm{nominal}}}
+\label{eq:scf_def}
+\end{equation}
+
+% ---- E4  End-cap axial force (thesis Eq. 3.4) ----
+\begin{equation}
+F_{\mathrm{cap}} = P\,A_{i} \approx P\,\pi R_{i}^{2}
+\label{eq:end_cap}
+\end{equation}
+
+% ---- E5  IPC2002-27124 reference SCF correlation (thesis Eq. 3.8) ----
+\begin{equation}
+\mathrm{SCF}_{P}^{\mathrm{IPC}} = 0.122
+\left(\tfrac{D}{t}\right)^{0.815}
+\left(\tfrac{d}{D}\right)^{1.06}
+\left(\tfrac{d}{t}\right)^{0.783}
+\left(\tfrac{L}{d}\right)^{0.014}
+\left(\tfrac{a}{C}\right)^{-2.87}
+\label{eq:ipc}
+\end{equation}
+
+% ---- E6  Proposed LD-SCF regression  (thesis Eq. 3.10, THIS WORK, R^2=0.916) ----
+\begin{equation}
+\boxed{\;
+\mathrm{SCF}_{P} = 142.1
+\left(\tfrac{d}{D}\right)^{0.938}
+\left(\tfrac{d}{t}\right)^{-0.676}
+\left(\tfrac{L}{d}\right)^{-0.167}
+\left(\tfrac{a}{C}\right)^{0.065}
+\;}
+\label{eq:ldscf}
+\end{equation}
+
+% log-linear form fitted by OLS (thesis Eq. 3.9)
+\begin{equation}
+\ln(\mathrm{SCF}_{P}) = \ln A
++ \alpha \ln\!\left(\tfrac{d}{D}\right)
++ \varepsilon \ln\!\left(\tfrac{d}{t}\right)
++ \beta  \ln\!\left(\tfrac{L}{d}\right)
++ \gamma \ln\!\left(\tfrac{a}{C}\right)
+\label{eq:loglinear}
+\end{equation}
+
+% ---- E7  Markl load-controlled S-N life (thesis Eq. 3.11 -> 3.12) ----
+\begin{equation}
+N_{f} = \left(\frac{C'}{\mathrm{SCF}_{P}\, S_{a}}\right)^{5},
+\qquad C' = 1126~\mathrm{MPa}
+\label{eq:markl}
+\end{equation}
+
+% ---- E8  Cyclic stress amplitude from a pressure cycle (thesis Eq. 3.13) ----
+\begin{equation}
+S_{a,i} = \frac{\Delta\sigma_{h,i}}{2}
+= \frac{1}{2}\,\sigma_{h}\,\frac{\Delta P_{i}}{\mathrm{MAOP}}
+\label{eq:samp}
+\end{equation}
+
+% ---- E9  Miner cumulative damage and estimated life (thesis Eq. 3.14-3.16) ----
+\begin{equation}
+D_{M} = \sum_{i} \frac{n_{i}}{N_{i}},
+\qquad
+t_{\mathrm{est}} = \frac{1}{D_{M,\mathrm{yr}}}
+\label{eq:miner}
+\end{equation}
+
+% ---- E10  Closed-form critical SCF threshold (THIS WORK, derived in WP1) ----
+% From D_M = n T / N_f = 1 with E7,E8 -> closed form generalising thesis Table 3.11.
+\begin{equation}
+\boxed{\;
+\mathrm{SCF}_{\mathrm{crit}} = \frac{C'}{S_{a}\,(n\,T)^{0.2}}
+\;}
+\label{eq:scf_crit}
+\end{equation}

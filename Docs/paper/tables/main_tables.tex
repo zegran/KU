@@ -1,0 +1,95 @@
+% Main tables for the IJPVP manuscript (WP4). Requires \usepackage{booktabs}.
+% All values transcribed verbatim from the thesis (Docs/KUnal_tez_org_tr.md).
+
+% ===================== T1: Numerical model & material =====================
+\begin{table}[t]
+\centering
+\caption{Numerical model and material parameters (representative validation model).}
+\label{tab:model}
+\begin{tabular}{ll}
+\toprule
+Parameter & Value \\
+\midrule
+Solver & Abaqus/Standard 2020 \\
+Element type & S4R (4-node reduced-integration shell) \\
+DOF per node & 6 \\
+Element shape / scheme & quadrilateral / structured \\
+Elements & 31{,}968 \\
+Total DOF & $\approx$194{,}388 \\
+Model symmetry & half-symmetric (180$^\circ$) \\
+Model length & 5{,}000 mm \\
+Aspect-ratio criterion & $\leq 3$ \\
+Material model & isotropic linear elastic (API 5L X70) \\
+Young's modulus, $E$ & 203{,}000 MPa \\
+Poisson's ratio, $\nu$ & 0.3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ===================== T2: Verification & validation =====================
+\begin{table}[t]
+\centering
+\caption{Verification and validation against IPC2002-27124 (Rosenfeld et al., 2002),
+benchmark case $d/D=0.037$, $a/C=0.5$. Reference stresses converted from ksi.}
+\label{tab:validation}
+\begin{tabular}{lccc}
+\toprule
+Quantity & Reference & This work & Difference \\
+\midrule
+End-cap force (N) & 1{,}128{,}697 & 1{,}128{,}840 & 0.013\% \\
+Nominal hoop stress (MPa) & 220.8 (analytic) & $\approx$220.8 (FEA) & --- \\
+Von Mises peak (MPa) & 784.0 & 694.1 & $-11.5$\% \\
+$S_{11}$ circumferential (MPa) & 759.9 & 772.2 & $+1.01$\% \\
+$S_{22}$ axial (MPa) & 806.8 & 714.4 & $-11.5$\% \\
+$\mathrm{SCF}_P$ (Von Mises basis) & 3.549 & 3.143 & $-11.5$\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ===================== T3: Parametric design & SCF summary =====================
+\begin{table}[t]
+\centering
+\caption{Parametric pipe geometries (constant $D/t=73.1$, $\sigma_h=349.2$~MPa,
+$P=9.55$~MPa) and resulting $\mathrm{SCF}_P$ summary over the Taguchi L9 array.}
+\label{tab:parametric}
+\begin{tabular}{lcccccc}
+\toprule
+OD & $D$ (mm) & $t$ (mm) & $D/t$ & $\mathrm{SCF}_P$ range & Mean$^{\dagger}$ \\
+\midrule
+36$''$ & 914.4  & 12.50 & 73.1 & 1.52--2.37 & 1.89 \\
+48$''$ & 1219.2 & 16.67 & 73.1 & 1.50--2.14 & 1.78 \\
+56$''$ & 1422.4 & 19.45 & 73.1 & 1.42--1.95 & 1.68 \\
+\midrule
+\multicolumn{6}{l}{Overall $\mathrm{SCF}_P$ range 1.42--2.37; smaller diameter $\Rightarrow$ higher SCF.}\\
+\bottomrule
+\end{tabular}
+
+\smallskip
+\footnotesize{$^{\dagger}$Mean of the nine tabulated L9 cases. (Thesis text states 1.96
+for 36$''$; resolve against tabulated data in drafting.)}
+\end{table}
+
+% ===================== T4: Fatigue sensitivity & critical threshold =====================
+\begin{table}[t]
+\centering
+\caption{$\mathrm{SCF}_P$ sensitivity of fatigue life ($n=12$ full MAOP cycles/yr,
+$\sigma_h=349.2$~MPa, 100-yr design life). Critical threshold at
+$\mathrm{SCF}_P\approx1.57$.}
+\label{tab:threshold}
+\begin{tabular}{lcccl}
+\toprule
+$\mathrm{SCF}_P$ & $N_f$ & $D_{100\,\mathrm{yr}}$ & $t_{\mathrm{est}}$ (yr) & Status \\
+\midrule
+1.42 & 1932 & 0.62 & 161 & $D<1$ (safe) \\
+1.51 & 1422 & 0.84 & 118 & $D<1$ (attention) \\
+1.65 &  912 & 1.32 &  76 & $D>1$ \\
+1.95 &  396 & 3.03 &  33 & $D>1$ \\
+2.14 &  249 & 4.83 &  21 & $D>1$ \\
+2.37 &  149 & 8.04 &  12 & $D>1$ \\
+\midrule
+\multicolumn{5}{l}{Mixed spectrum (56$''$ D7, $\mathrm{SCF}_P=1.95$):
+$D_{\mathrm{yr}}=2.90\times10^{-2}$, $t_{\mathrm{est}}\approx34$~yr;} \\
+\multicolumn{5}{l}{80\%-MAOP band contributes 68.6\% of annual damage.} \\
+\bottomrule
+\end{tabular}
+\end{table}
