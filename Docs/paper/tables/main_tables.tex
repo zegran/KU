@@ -1,7 +1,33 @@
-% Main tables for the IJPVP manuscript (WP4). Requires \usepackage{booktabs}.
-% All values transcribed verbatim from the thesis (Docs/KUnal_tez_org_tr.md).
+% Main tables for the IJPVP manuscript (WP4; renumbered WP6a to first-citation order).
+% Values from thesis v2 (Docs/KUnal_tez_org_tr_v2_02072026.md). Requires \usepackage{booktabs}.
+% Table 1 = parametric geometries (first cited Sec. 2.2)
+% Table 2 = FE model & material (Sec. 2.3)
+% Table 3 = verification & validation (Sec. 2.4)
+% Table 4 = fatigue sensitivity / threshold (Sec. 3.5, 4.1)
 
-% ===================== T1: Numerical model & material =====================
+% ===================== Table 1: Parametric design & SCF summary =====================
+\begin{table}[t]
+\centering
+\caption{Parametric pipe geometries (constant $D/t=73.1$, $\sigma_h=349.2$~MPa,
+$P=9.55$~MPa) and resulting $\mathrm{SCF}_P$ summary over the Taguchi L9 array.}
+\label{tab:parametric}
+\begin{tabular}{lcccccc}
+\toprule
+OD & $D$ (mm) & $t$ (mm) & $D/t$ & $\mathrm{SCF}_P$ range & Mean$^{\dagger}$ \\
+\midrule
+36$''$ & 914.4  & 12.50 & 73.1 & 1.52--2.37 & 1.89 \\
+48$''$ & 1219.2 & 16.67 & 73.1 & 1.50--2.14 & 1.78 \\
+56$''$ & 1422.4 & 19.45 & 73.1 & 1.42--1.95 & 1.68 \\
+\midrule
+\multicolumn{6}{l}{Overall $\mathrm{SCF}_P$ range 1.42--2.37; smaller diameter $\Rightarrow$ higher SCF.}\\
+\bottomrule
+\end{tabular}
+
+\smallskip
+\footnotesize{$^{\dagger}$Mean of the nine tabulated L9 cases.}
+\end{table}
+
+% ===================== Table 2: Numerical model & material =====================
 \begin{table}[t]
 \centering
 \caption{Numerical model and material parameters (representative validation model).}
@@ -26,11 +52,11 @@ Poisson's ratio, $\nu$ & 0.3 \\
 \end{tabular}
 \end{table}
 
-% ===================== T2: Verification & validation =====================
+% ===================== Table 3: Verification & validation =====================
 \begin{table}[t]
 \centering
-\caption{Verification and validation against IPC2002-27124 (Rosenfeld et al., 2002),
-benchmark case $d/D=0.037$, $a/C=0.5$. Reference stresses converted from ksi.}
+\caption{Verification and validation against the full-scale benchmark of Rosenfeld et al.,
+matched case $d/D=0.037$, $a/C=0.5$. Reference stresses converted from ksi.}
 \label{tab:validation}
 \begin{tabular}{lccc}
 \toprule
@@ -46,29 +72,7 @@ $\mathrm{SCF}_P$ (Von Mises basis) & 3.549 & 3.254 & $-8.3$\% \\
 \end{tabular}
 \end{table}
 
-% ===================== T3: Parametric design & SCF summary =====================
-\begin{table}[t]
-\centering
-\caption{Parametric pipe geometries (constant $D/t=73.1$, $\sigma_h=349.2$~MPa,
-$P=9.55$~MPa) and resulting $\mathrm{SCF}_P$ summary over the Taguchi L9 array.}
-\label{tab:parametric}
-\begin{tabular}{lcccccc}
-\toprule
-OD & $D$ (mm) & $t$ (mm) & $D/t$ & $\mathrm{SCF}_P$ range & Mean$^{\dagger}$ \\
-\midrule
-36$''$ & 914.4  & 12.50 & 73.1 & 1.52--2.37 & 1.89 \\
-48$''$ & 1219.2 & 16.67 & 73.1 & 1.50--2.14 & 1.78 \\
-56$''$ & 1422.4 & 19.45 & 73.1 & 1.42--1.95 & 1.68 \\
-\midrule
-\multicolumn{6}{l}{Overall $\mathrm{SCF}_P$ range 1.42--2.37; smaller diameter $\Rightarrow$ higher SCF.}\\
-\bottomrule
-\end{tabular}
-
-\smallskip
-\footnotesize{$^{\dagger}$Mean of the nine tabulated L9 cases.}
-\end{table}
-
-% ===================== T4: Fatigue sensitivity & critical threshold =====================
+% ===================== Table 4: Fatigue sensitivity & critical threshold =====================
 \begin{table}[t]
 \centering
 \caption{$\mathrm{SCF}_P$ sensitivity of fatigue life ($n=12$ full MAOP cycles/yr,
