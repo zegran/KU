@@ -6,7 +6,7 @@ closed-form critical threshold surfaced in this work. Citations not needed here.
 
 # 5. Conclusions
 
-A parametric finite element study of mild field-bend ripples in large-diameter API 5L X70 gas pipelines, coupled to a load-controlled Markl–Miner fatigue assessment and intended as a quantitative reference for fitness-for-service evaluation of ripple-type anomalies, supports four conclusions.
+This study coupled a parametric finite element analysis of mild field-bend ripples in large-diameter API 5L X70 gas pipelines to a load-controlled Markl–Miner fatigue assessment, with the aim of providing a quantitative reference for fitness-for-service evaluation of ripple-type anomalies. Four conclusions follow.
 
 1. Across 38 analyses at a constant diameter-to-thickness ratio of 73.1, the pressure-based stress concentration factor ranged from 1.42 to 2.37 and rose systematically as diameter decreased—a dependence that no correlation entering geometry only through $D/t$ can represent.
 
