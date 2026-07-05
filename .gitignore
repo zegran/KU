@@ -61,3 +61,6 @@ venv/
 *.tmp
 *.bak
 ~$*
+
+# WP6 deliverable exception: submission output IS tracked (thesis source docx stays ignored)
+!Docs/paper/submission/*.docx
