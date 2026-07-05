@@ -9,7 +9,7 @@ MEDIA = os.path.join(HERE, "..", "..", "..", "media", "media")
 OUT = os.path.join(HERE, "..")
 
 panels = [
-    ("image15.png", "(a) Von Mises"),
+    ("image15.png", "(a) von Mises"),
     ("image16.png", "(b) S11 (circumferential)"),
     ("image17.png", "(c) S22 (axial)"),
 ]

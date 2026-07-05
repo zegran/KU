@@ -10,7 +10,7 @@ Verified char counts: 78 / 77 / 71 / 72 / 77 (all <=85).
 - New closed-form SCF correlation (R2=0.916) for large-diameter pipe at D/t=73.1
 - SCF rises as diameter falls at constant D/t, so absolute size must be assessed
 - Fatigue is spectrum-driven: 80%-MAOP cycles govern most of the annual damage
-- Closed-form critical SCF of 1.57 enables fitness-for-service ripple decisions
+- Closed-form critical SCF of 1.56 enables fitness-for-service ripple decisions
 
 <!--
 Notes (WP6a / P4 realignment):
