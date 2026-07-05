@@ -2,7 +2,44 @@
 
 ---
 
-## ⚡ SESSION 2 STATE (2026-06-02) — ÖNCE BUNU OKU
+## ⚡ SESSION 3 STATE (2026-07-05/06) — ÖNCE BUNU OKU
+
+**Tek cümle:** WP6 zinciri (WP6a coherence + WP6b citation + WP6c dil + M6 montaj) yazar direktifi R2 ile **otonom tamamlandı**; manuscript tez v2'ye hizalandı ve **final teslimat docx** üretildi: `Docs/paper/submission/Unal_ripple_SCF_fatigue_IJPVP_R2.docx`. Sıradaki kapı: **WP6d (iThenticate — YAZAR)** + placeholder/künye teyitleri, sonra `WP7 başlat`.
+
+### İlerleme: 19/26 WP ✅
+| Faz | Durum |
+|---|---|
+| WP0a-d · WP1-WP4 · WP5a-g | ✅ |
+| **WP6a coherence** (QA-1..5 + R1-R8 + P1-P4 + M2-M5) | ✅ |
+| **WP6b citation** (30 ref, DOI-doğrulamalı, `08_references.md`) | ✅ |
+| **WP6c dil pass'i** (Q1 register + anti-AI) | ✅ |
+| **M6 final docx** (10 figür, 7 tablo, 170 denklem; doğrulandı) | ✅ |
+| **WP6d iThenticate** | 🔴 **YAZAR — SIRADAKİ** |
+| WP7a-e (submission paketi) · WP8 (submit) | ⏳ |
+
+### Session 3'te DEĞİŞEN sabit kararlar
+- **⚠ Anchor düzeltildi: SCF_crit ≈ 1.56** (kesin 1.5619; Session 2'deki "1.57" yuvarlama hatasıydı — metin+tablo+figür artık tutarlı).
+- **Aktif tez kaynağı: v2** — `Docs/KUnal_tez_org_tr_v2_02072026.md`. Doğrulama sayıları yenilendi: benchmark SCF **3.25 vs 3.55** (+4.9/−8.3/−6.3%); mesh convergence 640.3/672.8/718.6 MPa.
+- **Notasyon: D_m** (Miner) · Abaqus **2020** · ASME **V&V 10-2019** · IPC2002 markası prozda tek geçiş (M2).
+- **Numaralandırma final:** Fig.1=mf2 ↔ Fig.2=mf1 takası; Eq.5-7 Markl/S_a/Miner, Eq.8 IPC, Eq.9 LD-SCF; Table S2↔S3 takası.
+- Tüm QA bayrakları (Session 2 listesi) **kapandı**: QA-1 1.89 · QA-2 formül-türevli işaretler · QA-3 D_m · QA-4 sürümler · QA-5 çapraz ref · QA-6 citation final.
+
+### 🔴 Yazar aksiyonları (WP7 ön koşulu)
+1. R2.docx'i gözden geçir (Abstract/Intro + §4.2 çerçevesi)
+2. ⚠ placeholder'lar: affiliation/ORCID/e-posta · Funding · CoI · Data availability
+3. Künye teyitleri: [5] API 5L baskı/yıl · [28] Kiefner rapor no/yıl
+4. WP6d iThenticate (K4)
+
+### İlk okuma sırası (yeni oturum)
+1. Bu blok → 2. `README.md` (workflow, 19/26) → 3. `logs/2026-07-06-08-session-end-handover.md` (tam detay) → 4. `Docs/paper/submission/Unal_ripple_SCF_fatigue_IJPVP_R2.docx` → 5. Faz logları `logs/2026-07-05-01…06`
+
+### İlk komut (yazar onayı + WP6d sonrası): **`WP7 başlat`**
+
+> Aşağıdaki Session 2 (2026-06-02) ve Session 1 (2026-05-26) içerikleri tarihsel referanstır.
+
+---
+
+## ⚡ SESSION 2 STATE (2026-06-02) — tarihsel
 
 **Tek cümle:** WP1→WP5g tamamlandı; **tam IJPVP manuscript taslağı** (7 section + abstract + highlights + 10 figür + tablolar + denklemler + ~54 ref havuzu) hazır; sıradaki **`WP6a başlat`** (coherence/kalite fazı).
 
@@ -35,9 +72,9 @@
 
 ---
 
-> **Son oturum tarihi:** 2026-05-26 (Session 1) · 2026-06-02 (Session 2)
-> **Sonraki oturumda ilk okunacak dosya:** Bu dosya (Session 2 State bloğu)
-> **Sonraki adım:** `WP6a başlat`
+> **Son oturum tarihi:** 2026-05-26 (S1) · 2026-06-02 (S2) · 2026-07-05/06 (S3)
+> **Sonraki oturumda ilk okunacak dosya:** Bu dosya (Session 3 State bloğu)
+> **Sonraki adım:** WP6d (yazar) → `WP7 başlat`
 
 ---
 
