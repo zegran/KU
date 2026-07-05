@@ -1,7 +1,8 @@
 % Equation derivations for the IJPVP manuscript (WP4)
 % Notation deliberately disambiguated vs the thesis, which reused the
 % symbol D for diameter, flexural rigidity, and Miner damage.
-% Paper convention:  D = outer diameter ; D_f = flexural rigidity ; D_M = Miner damage.
+% Paper convention:  D = outer diameter ; D_f = flexural rigidity ; D_m = Miner damage.
+% (D_m follows thesis v2, which adopted D_m for cumulative damage.)
 % Maps to thesis equation numbers in comments.
 
 % ---- E1  Thin-shell membrane stresses (thesis Eq. 3.1) ----
@@ -78,14 +79,14 @@ S_{a,i} = \frac{\Delta\sigma_{h,i}}{2}
 
 % ---- E9  Miner cumulative damage and estimated life (thesis Eq. 3.14-3.16) ----
 \begin{equation}
-D_{M} = \sum_{i} \frac{n_{i}}{N_{i}},
+D_{m} = \sum_{i} \frac{n_{i}}{N_{i}},
 \qquad
-t_{\mathrm{est}} = \frac{1}{D_{M,\mathrm{yr}}}
+t_{\mathrm{est}} = \frac{1}{D_{m,\mathrm{yr}}}
 \label{eq:miner}
 \end{equation}
 
 % ---- E10  Closed-form critical SCF threshold (THIS WORK, derived in WP1) ----
-% From D_M = n T / N_f = 1 with E7,E8 -> closed form generalising thesis Table 3.11.
+% From D_m = n T / N_f = 1 with E7,E8 -> closed form generalising thesis Table 3.11.
 \begin{equation}
 \boxed{\;
 \mathrm{SCF}_{\mathrm{crit}} = \frac{C'}{S_{a}\,(n\,T)^{0.2}}
