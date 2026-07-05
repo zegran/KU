@@ -2,7 +2,7 @@
 
 > Systematic conversion of a Turkish MSc thesis on **ripple defect SCF & fatigue life in API 5L X70 high-strength gas pipelines** into a peer-reviewed English manuscript targeted at the *International Journal of Pressure Vessels and Piping* (Elsevier, Q1).
 
-**Status:** Full draft complete · WP1–WP5g done · **WP6a (coherence) next** _(updated 2026-06-02)_
+**Status:** WP6a–WP6c complete (autonomous R2 chain) · final docx assembled · **WP6d (iThenticate, author) next** _(updated 2026-07-06)_
 **Target journal:** International Journal of Pressure Vessels and Piping (IJPVP) — locked
 **Source:** TR MSc thesis (Korcan Ünal, 2026) — local-only, not tracked
 
@@ -72,10 +72,10 @@ Korc/
 | **WP5e** | **Introduction** (second-to-last) | `ml-paper-writing` | ✅ Drafted (~950 w) |
 | **WP5f** | **Abstract + Title** (last) | `ml-paper-writing` | ✅ Drafted (196 w, 15-w title) |
 | **WP5g** | **Highlights** | `ml-paper-writing` | ✅ Drafted (5 bullets) |
-| **WP6a** | Coherence pass | `paper-self-review` | ⏳ **Next** |
-| **WP6b** | Citation verification | `citation-verification` | ⏳ |
-| **WP6c** | Anti-AI / language polish | `writing-anti-ai` | ⏳ |
-| **WP6d** | iThenticate check (🔴 author) | — | ⏳ |
+| **WP6a** | Coherence pass | `paper-self-review` | ✅ Done (QA-1..5, R1-R8, M2-M5, tez v2) |
+| **WP6b** | Citation verification | `citation-verification` | ✅ Done (30 refs, DOI-verified) |
+| **WP6c** | Anti-AI / language polish | `writing-anti-ai` | ✅ Done (Q1 register pass) |
+| **WP6d** | iThenticate check (🔴 author) | — | ⏳ **Next** |
 | **WP7a** | Cover letter + novelty | `doc-coauthoring` | ⏳ |
 | **WP7b** | Graphical abstract | `publication-chart-skill` | ⏳ |
 | **WP7c** | CRediT + declarations + data avail. | `doc-coauthoring` | ⏳ |
@@ -83,7 +83,7 @@ Korc/
 | **WP7e** | Final self-review | `paper-self-review` | ⏳ |
 | **WP8** | Submission (🔴 author) | — | ⏳ |
 
-**Progress: 16 / 26 WPs complete** (WP0a–d, WP1–WP4, WP5a–g). Full manuscript drafted (~5230/6000 words) with figures, tables, equations, abstract and highlights. Quality phase (WP6) next.
+**Progress: 19 / 26 WPs complete** (WP0a–d, WP1–WP4, WP5a–g, WP6a–c). Manuscript finalized against thesis v2 and assembled as `Docs/paper/submission/Unal_ripple_SCF_fatigue_IJPVP_R2.docx`. Author gate: WP6d (iThenticate) + künye teyitleri, then WP7 (submission package).
 
 Each WP is gate-locked: no WP starts without author authorization; no WP is skipped. See `Docs/plan/WP_skill_mapping.md` for skill activation rules.
 
