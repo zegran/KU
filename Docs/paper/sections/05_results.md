@@ -1,6 +1,6 @@
 <!--
 WP5b Results draft. Drafted under WP0d rewrite SOP (paraphrase).
-Citation numbers [n] PROVISIONAL (WP6b). Fig.4=MF4, Fig.5=MF5, Fig.6=MF6.
+Citation numbers [n] FINAL (WP6b). Fig.4=MF4, Fig.5=MF5, Fig.6=MF6.
 Tables (WP6a renumbering): Table 1 = parametric, Table 4 = threshold/spectrum, S1-S3 supplementary.
 IPC deviation signs follow the IPC2002 formula directly (corrects thesis L955 prose;
 see logs/2026-06-02-09). Anchor critical-threshold curve (Fig.7/MF7) is in Discussion.
@@ -26,7 +26,7 @@ Because $\theta$ and $L/d$ are partially confounded in the L9 array, the wavelen
 
 ## 3.4 Empirical large-diameter SCF correlation
 
-The 38 finite element points were fitted with ordinary least squares in log space (Eq. 6b), which linearises the assumed power-law form and admits a closed-form solution. The result is the correlation of Eq. 6,
+The 38 finite element points were fitted with ordinary least squares in log space (Eq. 6b), which linearises the assumed power-law form and admits a closed-form solution [26]. The result is the correlation of Eq. 6,
 $$\mathrm{SCF}_P = 142.1\,(d/D)^{0.938}\,(d/t)^{-0.676}\,(L/d)^{-0.167}\,(a/C)^{0.065},$$
 valid for $D/t = 73.1$ and API 5L X70. The fit is accurate over the whole parametric domain: the coefficient of determination is $R^2 = 0.916$, the root-mean-square error is 0.058 SCF units—about 3% of the mean—and no point departs from the prediction by more than 9% (Fig. 5). The residuals are symmetric about the line of perfect agreement, with no systematic bias.
 
@@ -44,5 +44,5 @@ DRAFT NOTES (WP6a):
 - 36" mean 1.89 used (tabulated-consistent); thesis text says 1.96 — resolve in WP6a.
 - IPC deviation signs/values computed from Eq.5 directly (a/C=0.25: -31..-84%; a/C=0.50: +48..+437%) — CORRECTS thesis L955.
 - Anchor critical SCF threshold curve (Fig.7/MF7) deliberately deferred to Discussion (Section 4).
-- Markl original + Rosenfeld citations provisional.
+- Citations FINAL (WP6b): [4] Rosenfeld, [26] Montgomery (OLS).
 -->
